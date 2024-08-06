@@ -5,5 +5,5 @@ out/
 target/
 allure-report/
 allure-results/
-.idea/
 *.iml
+/.idea/

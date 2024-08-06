@@ -20,4 +20,5 @@ jobs:
       - name: Build and run tests
         run: mvn clean test
       - name: Generate allure report
+        if: always()
         run: allure serve target/allure-results
