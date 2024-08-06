@@ -1,0 +1,23 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Java JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '11'
+      - name: Build and run tests
+        run: mvn clean test
+      - name: Generate allure report
+        run: allure serve target/allure-results
