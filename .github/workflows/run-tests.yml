@@ -39,6 +39,7 @@ jobs:
           allure_results: target/allure-results
 
       - name: Print token
+        if: always()
         run: echo "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Publish test report
