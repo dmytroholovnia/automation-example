@@ -55,5 +55,9 @@ jobs:
         run: echo "${{ toJSON(github) }}"
 
       - name: New report link
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPOSITORY_NAME: ${{ github.repository.name }}
+          RUN_ID: ${{ github.run_number}}
         if: always()
-        run: echo "https://${{ github.repository_owner }}.github.io/${{ github.repository.name }}/${{ github.run_number}}/"
+        run: echo "https://$OWNER.github.io/$REPOSITORY_NAME/$RUN_ID/"
