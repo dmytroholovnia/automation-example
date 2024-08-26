@@ -20,7 +20,7 @@ jobs:
           java-version: '11'
 
       - name: Build and run tests
-        run: mvn clean test
+        run: mvn verify
 
       - name: Load test report history
         uses: actions/checkout@v3
