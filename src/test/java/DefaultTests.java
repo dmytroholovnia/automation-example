@@ -13,7 +13,6 @@ public class DefaultTests {
     @ParameterizedTest
     @CsvSource({"4, 2, 2", "7, 5, 2"})
     public void someTest(int expected, int firstNumber, int secondNumber) {
-        //test
         assertEquals(expected, calculator.sum(firstNumber, secondNumber));
     }
 
