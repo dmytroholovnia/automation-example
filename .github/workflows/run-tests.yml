@@ -3,8 +3,6 @@ name: Run tests
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
 
 jobs:
   test:
@@ -51,10 +49,6 @@ jobs:
           publish_dir: allure-history
 
       - name: Report link
-        if: always()
-        run: echo "${{ toJSON(github) }}"
-
-      - name: New report link
         env:
           OWNER: ${{ github.repository_owner }}
           REPOSITORY_NAME: ${{ github.event.repository.name }}
