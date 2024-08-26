@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 26 11:48:37 GMT 2024","Mon Aug 26 11:48:37 GMT 2024","2","","DefaultTests","","DefaultTests","someTest","Positive tests [2] 7, 5, 2",""
+"passed","Mon Aug 26 11:48:37 GMT 2024","Mon Aug 26 11:48:37 GMT 2024","18","","DefaultTests","","DefaultTests","someTest","Positive tests [1] 4, 2, 2",""
+"failed","Mon Aug 26 11:48:37 GMT 2024","Mon Aug 26 11:48:37 GMT 2024","30","","DefaultTests","","DefaultTests","negativeTest","Negative test",""
