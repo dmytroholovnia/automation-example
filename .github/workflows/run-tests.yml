@@ -51,4 +51,5 @@ jobs:
           publish_dir: allure-history
 
       - name: Report link
+        if: always()
         run: echo "${{ toJSON(github) }}"
