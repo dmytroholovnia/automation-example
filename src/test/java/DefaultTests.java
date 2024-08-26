@@ -20,7 +20,7 @@ public class DefaultTests {
     @DisplayName("Negative test")
     @Test
     public void negativeTest() {
-        assertEquals(9, calculator.square(3));
+        assertEquals(9, calculator.square(4));
     }
 
 }
