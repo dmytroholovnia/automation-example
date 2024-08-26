@@ -49,3 +49,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: master
           publish_dir: allure-history
+
+      - name: Report link
+        run: echo "${{ toJSON(github) }}"
