@@ -27,8 +27,8 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          ref: gh-pages
-          path: gh-pages
+          ref: master
+          path: master
 
       - name: Show files
         run: ls -R
@@ -37,7 +37,7 @@ jobs:
         uses: simple-elf/allure-report-action@v1.7
         if: always()
         with:
-          gh_pages: gh-pages
+          gh_pages: master
           allure_history: allure-history
           allure_report: allure-report
           allure_results: target/allure-results
@@ -47,7 +47,7 @@ jobs:
 #        run: echo "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Publish test report
-        if: github.ref == 'refs/heads/main'
+#        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
