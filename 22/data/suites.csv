@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat Jun 28 07:33:13 GMT 2025","Sat Jun 28 07:33:13 GMT 2025","35","","DefaultTests","","DefaultTests","negativeTest","Negative test",""
+"passed","Sat Jun 28 07:33:13 GMT 2025","Sat Jun 28 07:33:13 GMT 2025","22","","DefaultTests","","DefaultTests","someTest","Positive tests [1] 4, 2, 2",""
+"passed","Sat Jun 28 07:33:13 GMT 2025","Sat Jun 28 07:33:13 GMT 2025","1","","DefaultTests","","DefaultTests","someTest","Positive tests [2] 7, 5, 2",""
